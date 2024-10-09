@@ -261,3 +261,7 @@ console.log(charactersNames.length) // length non cambia. le stringhe corrispond
 /* --EXTRA-- ESERCIZIO 10
   Crea una funzionalità che selezioni un elemento casuale dall'array "starWarsCharacters" e ne stampi in console le proprietà in modo discorsivo (a tuo piacimento).
 */
+let randomIndex = Math.floor(Math.random() * starWarsCharacters.length)
+let randomCharacters = starWarsCharacters[randomIndex]
+
+console.log(randomCharacters)
