@@ -246,6 +246,18 @@ console.log('Personaggi Robot: ', robotCharacters)
   Una volta fatto crea un console.log per controllare la proprietà length di "charactersNames" prima e dopo l'operazione.
 */
 
+for (i = 0; i < femaleCharacters.length; i++) {
+  for (k = 0; k < charactersNames.length; k++) {
+    if (femaleCharacters[i] === charactersNames[k]) {
+      delete charactersNames[k]
+    }
+  }
+}
+
+console.log(charactersNames)
+console.log(charactersNames.length) // length non cambia. le stringhe corrispondenti ai personaggi femminili ora sono
+//vuoti
+
 /* --EXTRA-- ESERCIZIO 10
   Crea una funzionalità che selezioni un elemento casuale dall'array "starWarsCharacters" e ne stampi in console le proprietà in modo discorsivo (a tuo piacimento).
 */
