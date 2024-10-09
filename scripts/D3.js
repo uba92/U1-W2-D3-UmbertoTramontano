@@ -264,4 +264,4 @@ console.log(charactersNames.length) // length non cambia. le stringhe corrispond
 let randomIndex = Math.floor(Math.random() * starWarsCharacters.length)
 let randomCharacters = starWarsCharacters[randomIndex]
 
-console.log(randomCharacters)
+console.log('Personaggio casuale selezionato: ', randomCharacters)
